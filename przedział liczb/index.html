@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+
+<script>
+    function show()
+{
+    var first = document.getElementById("first").value; 
+    var second = document.getElementById("second").value; 
+    var text="";
+
+    
+   
+        for (i=first; i<=second; i++) //cos nie tak, 4-10 nie dziala? wtf?
+        {
+            text = text + i + " ";
+        }
+    
+    
+    document.getElementById("answer").innerHTML = text; 
+}
+</script>
+</head>
+<body>
+    <div>
+        <input type="text" id="first"/>
+        <input type="text" id="second"/>
+        <input type="submit" value="Show" onclick="show()"/>
+        <div id="answer"></div>
+    </div>
+</body>
+</html>
